@@ -58,8 +58,12 @@ func main() {
 
 	var client *mongo.Client = database.Connect()
 
+	if client == nil {
+	log.Fatal("MongoDB client is nil. Connection failed.")
+	}
+
 	if err := client.Ping(context.Background(), nil); err != nil {
-		log.Fatalf("Failed to reach server: %v", err)
+	log.Fatalf("Failed to reach MongoDB server: %v", err)
 	}
 	defer func() {
 		err := client.Disconnect(context.Background())
