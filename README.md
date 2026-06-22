@@ -23,11 +23,11 @@ MagicStream is a backend service designed to power a smooth, high-performance me
 
 ## 🏗️ Tech Stack
 
-- **Language:** Go (Golang)
-- **Framework:** Gin
-- **Database:** MongoDB (Atlas / Local)
-- **Architecture:** REST API (Modular design)
-- **Tools:** dotenv, CORS middleware
+- Language: Go (Golang)
+- Framework: Gin
+- Database: MongoDB (Atlas / Local)
+- Architecture: REST API (Modular design)
+- Tools: dotenv, CORS middleware
 
 ---
 
